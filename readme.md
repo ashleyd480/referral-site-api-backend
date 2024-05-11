@@ -10,7 +10,7 @@ This project was completed early May 2024 as part of General Assembly's Bootcamp
 ---- 
 
 # Design 
-The API endpoints and associated backend code were designed with a user-first approach, considering what actions users would take on my hypothetical front-end site and what would need to happen under the hood. My full list of methods is ![here](spring-referral-main/assets/methods-planning.pdf). Note how throughout the methods and variables are descriptive, allowing for easier code comprehension. 
+The API endpoints and associated backend code were designed with a user-first approach, considering what actions users would take on my hypothetical front-end site and what would need to happen under the hood. My full list of methods is [here](https://github.com/ashleyd480/referral-site-api-backend/blob/main/spring-referral-main/assets/methods-planning.pdf). Note how throughout the methods and variables are descriptive, allowing for easier code comprehension. 
 
 ## User Story
 An example front-end flow is:  A user creates an account, and he creates his first referral post to share an opening at his company. He searches for what tags are available and appends tags to his post, or he can choose to add a custom tag. The tag can be added to his post, and he can submit his post. 
@@ -69,12 +69,13 @@ The following is a note of how the relationships affect specifically how we hand
 ---- 
 
 # Functionality
-The backend code consists of the spring-referral-main and notification-microservice. 
+The backend code consists of the [spring-referral-main](https://github.com/ashleyd480/referral-site-api-backend/tree/main/spring-referral-main) and [notification-microservice](https://github.com/ashleyd480/referral-site-api-backend/tree/main/notification-microservice).
+
 
 ## Main App
-The core app contained in the aforementioned spring-referall-app allows the following to be done through API endpoints and associated CRUD (create, retrieve, update, and delete) logic. 
+The core app contained in the aforementioned spring-referral-main allows the following to be done through API endpoints and associated CRUD (create, retrieve, update, and delete) logic. 
 (Note:
-- For your convenience, I have linked postman-commands.json with sample request body data that you can copy and paste into Postman for API calls that require that information. Included are also some `/bulk` endpoint calls that allow you to easily populate the database with some information."
+- For your convenience, I have linked postman-commands.json [here](https://github.com/ashleyd480/referral-site-api-backend/blob/main/spring-referral-main/assets/postman-commands.json) with sample request body data that you can copy and paste into Postman for API calls that require that information. Included are also some `/bulk` endpoint calls that allow you to easily populate the database with some information."
 - `@Around` logging aspect using Spring AOP  logs when a service method is called and the time it started and finished its call.)
 
 ### Address:
