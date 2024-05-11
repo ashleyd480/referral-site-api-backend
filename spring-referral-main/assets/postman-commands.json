@@ -1,0 +1,1076 @@
+{
+	"info": {
+		"_postman_id": "0868db96-27ce-4544-b477-4cecf76dc247",
+		"name": "Spring Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34144607"
+	},
+	"item": [
+		{
+			"name": "Postman Setup",
+			"item": [
+				{
+					"name": "Bulk Create Users",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n  {\n    \"username\": \"user1\",\n    \"email\": \"user1@example.com\",\n    \"password\": \"password1\",\n    \"profilePictureURL\": \"https://example.com/profile1.jpg\",\n    \"userBio\": \"Bio for user 1\",\n    \"address\": {\n      \"street\": \"123 Main St\",\n      \"city\": \"City 1\",\n      \"state\": \"State 1\",\n      \"zipCode\": \"12345\",\n      \"country\": \"Country 1\"\n    }\n  },\n  {\n    \"username\": \"user2\",\n    \"email\": \"user2@example.com\",\n    \"password\": \"password2\",\n    \"profilePictureURL\": \"https://example.com/profile2.jpg\",\n    \"userBio\": \"Bio for user 2\",\n    \"address\": {\n      \"street\": \"456 Elm St\",\n      \"city\": \"City 2\",\n      \"state\": \"State 2\",\n      \"zipCode\": \"23456\",\n      \"country\": \"Country 2\"\n    }\n  },\n  {\n    \"username\": \"user3\",\n    \"email\": \"user3@example.com\",\n    \"password\": \"password3\",\n    \"profilePictureURL\": \"https://example.com/profile3.jpg\",\n    \"userBio\": \"Bio for user 3\",\n    \"address\": {\n      \"street\": \"789 Oak St\",\n      \"city\": \"City 3\",\n      \"state\": \"State 3\",\n      \"zipCode\": \"34567\",\n      \"country\": \"Country 3\"\n    }\n  },\n  {\n    \"username\": \"user4\",\n    \"email\": \"user4@example.com\",\n    \"password\": \"password4\",\n    \"profilePictureURL\": \"https://example.com/profile4.jpg\",\n    \"userBio\": \"Bio for user 4\",\n    \"address\": {\n      \"street\": \"1011 Pine St\",\n      \"city\": \"City 4\",\n      \"state\": \"State 4\",\n      \"zipCode\": \"45678\",\n      \"country\": \"Country 4\"\n    }\n  },\n  {\n    \"username\": \"user5\",\n    \"email\": \"user5@example.com\",\n    \"password\": \"password5\",\n    \"profilePictureURL\": \"https://example.com/profile5.jpg\",\n    \"userBio\": \"Bio for user 5\",\n    \"address\": {\n      \"street\": \"1213 Cedar St\",\n      \"city\": \"City 5\",\n      \"state\": \"State 5\",\n      \"zipCode\": \"56789\",\n      \"country\": \"Country 5\"\n    }\n  },\n  {\n    \"username\": \"user6\",\n    \"email\": \"user6@example.com\",\n    \"password\": \"password6\",\n    \"profilePictureURL\": \"https://example.com/profile6.jpg\",\n    \"userBio\": \"Bio for user 6\",\n    \"address\": {\n      \"street\": \"1415 Maple St\",\n      \"city\": \"City 6\",\n      \"state\": \"State 6\",\n      \"zipCode\": \"67890\",\n      \"country\": \"Country 6\"\n    }\n  },\n  {\n    \"username\": \"user7\",\n    \"email\": \"user7@example.com\",\n    \"password\": \"password7\",\n    \"profilePictureURL\": \"https://example.com/profile7.jpg\",\n    \"userBio\": \"Bio for user 7\",\n    \"address\": {\n      \"street\": \"1617 Birch St\",\n      \"city\": \"City 7\",\n      \"state\": \"State 7\",\n      \"zipCode\": \"78901\",\n      \"country\": \"Country 7\"\n    }\n  },\n  {\n    \"username\": \"user8\",\n    \"email\": \"user8@example.com\",\n    \"password\": \"password8\",\n    \"profilePictureURL\": \"https://example.com/profile8.jpg\",\n    \"userBio\": \"Bio for user 8\",\n    \"address\": {\n      \"street\": \"1819 Walnut St\",\n      \"city\": \"City 8\",\n      \"state\": \"State 8\",\n      \"zipCode\": \"89012\",\n      \"country\": \"Country 8\"\n    }\n  },\n  {\n    \"username\": \"user9\",\n    \"email\": \"user9@example.com\",\n    \"password\": \"password9\",\n    \"profilePictureURL\": \"https://example.com/profile9.jpg\",\n    \"userBio\": \"Bio for user 9\",\n    \"address\": {\n      \"street\": \"2021 Cherry St\",\n      \"city\": \"City 9\",\n      \"state\": \"State 9\",\n      \"zipCode\": \"90123\",\n      \"country\": \"Country 9\"\n    }\n  },\n  {\n    \"username\": \"user10\",\n    \"email\": \"user10@example.com\",\n    \"password\": \"password10\",\n    \"profilePictureURL\": \"https://example.com/profile10.jpg\",\n    \"userBio\": \"Bio for user 10\",\n    \"address\": {\n      \"street\": \"2223 Oak St\",\n      \"city\": \"City 10\",\n      \"state\": \"State 10\",\n      \"zipCode\": \"01234\",\n      \"country\": \"Country 10\"\n    }\n  }\n]\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/users/bulk",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"bulk"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Bulk Create Posts",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n  {\n    \"postTitle\": \"Job Interview Fails\",\n    \"postContent\": \"Interviewer: What's your greatest weakness?\\nMe: Honesty.\\nInterviewer: I don't think honesty is a weakness.\\nMe: I don't give a damn what you think.\",\n    \"numberLikesOnPost\": 8,\n    \"postMediaURL\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\",\n    \"user\": {\n      \"userId\": 1\n    }\n  },\n  {\n    \"postTitle\": \"Monday Morning Job Search\",\n    \"postContent\": \"Applying for jobs on Monday morning is like going grocery shopping when you're hungry. You end up with a bunch of stuff you don't need.\",\n    \"numberLikesOnPost\": 12,\n    \"postMediaURL\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\",\n    \"user\": {\n      \"userId\": 1\n    }\n  },\n  {\n    \"postTitle\": \"Resume Building Pro Tip\",\n    \"postContent\": \"My resume says I'm 'detail-oriented with excellent communication skills'. Translation: I can email memes to my coworkers.\",\n    \"numberLikesOnPost\": 5,\n    \"postMediaURL\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\",\n    \"user\": {\n      \"userId\": 2\n    }\n  },\n  {\n    \"postTitle\": \"Interview Mind Games\",\n    \"postContent\": \"Me: I'm a quick learner.\\nInterviewer: What's 11 times 11?\\nMe: 65?\\nInterviewer: Not even close.\\nMe: But I'm quick!\",\n    \"numberLikesOnPost\": 10,\n    \"postMediaURL\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\",\n    \"user\": {\n      \"userId\": 2\n    }\n  },\n  {\n    \"postTitle\": \"Dream Job\",\n    \"postContent\": \"I found my dream job. It's the one where I get paid to stay at home and watch Netflix.\",\n    \"numberLikesOnPost\": 20,\n    \"postMediaURL\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\",\n    \"user\": {\n      \"userId\": 3\n    }\n  },\n  {\n    \"postTitle\": \"LinkedIn Endorsements\",\n    \"postContent\": \"LinkedIn endorsements are like high fives from people who've never met you. Thanks for the support, but do you even know what I do?\",\n    \"numberLikesOnPost\": 3,\n    \"postMediaURL\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\",\n    \"user\": {\n      \"userId\": 3\n    }\n  },\n  {\n    \"postTitle\": \"Job Search Struggle\",\n    \"postContent\": \"The job search is like a scavenger hunt, but instead of finding treasure, you find rejection letters.\",\n    \"numberLikesOnPost\": 15,\n    \"postMediaURL\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\",\n    \"user\": {\n      \"userId\": 4\n    }\n  },\n  {\n    \"postTitle\": \"Job Interview Dress Code\",\n    \"postContent\": \"Dressing for a job interview is like dressing for Halloween. You pretend to be someone you're not and hope they give you candy.\",\n    \"numberLikesOnPost\": 7,\n    \"postMediaURL\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\",\n    \"user\": {\n      \"userId\": 4\n    }\n  },\n  {\n    \"postTitle\": \"When You Get Rejected\",\n    \"postContent\": \"Getting rejected from a job is like getting rejected by your crush. You pretend you're fine, but you're really just eating ice cream in your pajamas.\",\n    \"numberLikesOnPost\": 18,\n    \"postMediaURL\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\",\n    \"user\": {\n      \"userId\": 5\n    }\n  },\n  {\n    \"postTitle\": \"Job Interview Mind Games\",\n    \"postContent\": \"Interviewer: Where do you see yourself in 5 years?\\nMe: Running this place.\\nInterviewer: Where do you see yourself in 5 years realistically?\\nMe: In jail for insubordination.\",\n    \"numberLikesOnPost\": 4,\n    \"postMediaURL\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\",\n    \"user\": {\n      \"userId\": 5\n    }\n  },\n  {\n    \"postTitle\": \"The Office Life\",\n    \"postContent\": \"Working in an office is like being in a bad relationship. You pretend everything's fine, but deep down, you know it's not working out.\",\n    \"numberLikesOnPost\": 9,\n    \"postMediaURL\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\",\n    \"user\": {\n      \"userId\": 6\n    }\n  },\n  {\n    \"postTitle\": \"Job Application Stress\",\n    \"postContent\": \"Filling out job applications is like answering exam questions you didn't study for. You just hope you get enough right to pass.\",\n    \"numberLikesOnPost\": 13,\n    \"postMediaURL\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\",\n    \"user\": {\n      \"userId\": 6\n    }\n  },\n  {\n    \"postTitle\": \"Dream Job vs. Reality\",\n    \"postContent\": \"Dream job: Getting paid to travel the world.\\nReality: Getting paid to sit in a cubicle and stare at a computer screen.\",\n    \"numberLikesOnPost\": 2,\n    \"postMediaURL\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\",\n    \"user\": {\n      \"userId\": 7\n    }\n  },\n  {\n    \"postTitle\": \"Job Interview Nerves\",\n    \"postContent\": \"Me: I'm excited to be here for the interview!\\nBrain: Say something stupid.\\nMe: I'm excited to be here for the inter...view.\",\n    \"numberLikesOnPost\": 16,\n    \"postMediaURL\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\",\n    \"user\": {\n      \"userId\": 7\n    }\n  },\n  {\n    \"postTitle\": \"Resume Building Pro Tip\",\n    \"postContent\": \"My resume says 'detail-oriented with excellent communication skills'. Translation: I can email memes to my coworkers.\",\n    \"numberLikesOnPost\": 6,\n    \"postMediaURL\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\",\n    \"user\": {\n      \"userId\": 8\n    }\n  },\n  {\n    \"postTitle\": \"Job Hunt Struggles\",\n    \"postContent\": \"The job hunt is like trying to find your keys in the dark. You know they're out there somewhere, but you keep stumbling over obstacles.\",\n    \"numberLikesOnPost\": 11,\n    \"postMediaURL\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\",\n    \"user\": {\n      \"userId\": 8\n    }\n  },\n  {\n    \"postTitle\": \"Job Interview Tips\",\n    \"postContent\": \"Interview tip: If they ask where you see yourself in 5 years, don't say 'working here'. They want ambition, not desperation.\",\n    \"numberLikesOnPost\": 1,\n    \"postMediaURL\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\",\n    \"user\": {\n      \"userId\": 9\n    }\n  },\n  {\n    \"postTitle\": \"The Office Drama\",\n    \"postContent\": \"Office politics is like a soap opera, but with fewer attractive people and more passive-aggressive emails.\",\n    \"numberLikesOnPost\": 14,\n    \"postMediaURL\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\",\n    \"user\": {\n      \"userId\": 9\n    }\n  },\n  {\n    \"postTitle\": \"The Job Search Saga\",\n    \"postContent\": \"The job search is a roller coaster of emotions. One minute you're hopeful, the next you're crying into a pint of ice cream.\",\n    \"numberLikesOnPost\": 0,\n    \"postMediaURL\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\",\n    \"user\": {\n      \"userId\": 10\n    }\n  },\n  {\n    \"postTitle\": \"Job Interview Nightmare\",\n    \"postContent\": \"Went to a job interview today. When they asked where I saw myself in 5 years, I said 'celebrating the 5th year anniversary of you asking me this question'.\",\n    \"numberLikesOnPost\": 17,\n    \"postMediaURL\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\",\n    \"user\": {\n      \"userId\": 10\n    }\n  }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/posts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Bulk Create Tags",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n  {\n    \"postTitle\": \"Job Interview Fails\",\n    \"postContent\": \"Interviewer: What's your greatest weakness?\\nMe: Honesty.\\nInterviewer: I don't think honesty is a weakness.\\nMe: I don't give a damn what you think.\",\n    \"numberLikesOnPost\": 8,\n    \"postMediaURL\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\",\n    \"user\": {\n      \"userId\": 1\n    }\n  },\n  {\n    \"postTitle\": \"Monday Morning Job Search\",\n    \"postContent\": \"Applying for jobs on Monday morning is like going grocery shopping when you're hungry. You end up with a bunch of stuff you don't need.\",\n    \"numberLikesOnPost\": 12,\n    \"postMediaURL\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\",\n    \"user\": {\n      \"userId\": 1\n    }\n  },\n  {\n    \"postTitle\": \"Resume Building Pro Tip\",\n    \"postContent\": \"My resume says I'm 'detail-oriented with excellent communication skills'. Translation: I can email memes to my coworkers.\",\n    \"numberLikesOnPost\": 5,\n    \"postMediaURL\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\",\n    \"user\": {\n      \"userId\": 2\n    }\n  },\n  {\n    \"postTitle\": \"Interview Mind Games\",\n    \"postContent\": \"Me: I'm a quick learner.\\nInterviewer: What's 11 times 11?\\nMe: 65?\\nInterviewer: Not even close.\\nMe: But I'm quick!\",\n    \"numberLikesOnPost\": 10,\n    \"postMediaURL\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\",\n    \"user\": {\n      \"userId\": 2\n    }\n  },\n  {\n    \"postTitle\": \"Dream Job\",\n    \"postContent\": \"I found my dream job. It's the one where I get paid to stay at home and watch Netflix.\",\n    \"numberLikesOnPost\": 20,\n    \"postMediaURL\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\",\n    \"user\": {\n      \"userId\": 3\n    }\n  },\n  {\n    \"postTitle\": \"LinkedIn Endorsements\",\n    \"postContent\": \"LinkedIn endorsements are like high fives from people who've never met you. Thanks for the support, but do you even know what I do?\",\n    \"numberLikesOnPost\": 3,\n    \"postMediaURL\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\",\n    \"user\": {\n      \"userId\": 3\n    }\n  },\n  {\n    \"postTitle\": \"Job Search Struggle\",\n    \"postContent\": \"The job search is like a scavenger hunt, but instead of finding treasure, you find rejection letters.\",\n    \"numberLikesOnPost\": 15,\n    \"postMediaURL\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\",\n    \"user\": {\n      \"userId\": 4\n    }\n  },\n  {\n    \"postTitle\": \"Job Interview Dress Code\",\n    \"postContent\": \"Dressing for a job interview is like dressing for Halloween. You pretend to be someone you're not and hope they give you candy.\",\n    \"numberLikesOnPost\": 7,\n    \"postMediaURL\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\",\n    \"user\": {\n      \"userId\": 4\n    }\n  },\n  {\n    \"postTitle\": \"When You Get Rejected\",\n    \"postContent\": \"Getting rejected from a job is like getting rejected by your crush. You pretend you're fine, but you're really just eating ice cream in your pajamas.\",\n    \"numberLikesOnPost\": 18,\n    \"postMediaURL\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\",\n    \"user\": {\n      \"userId\": 5\n    }\n  },\n  {\n    \"postTitle\": \"Job Interview Mind Games\",\n    \"postContent\": \"Interviewer: Where do you see yourself in 5 years?\\nMe: Running this place.\\nInterviewer: Where do you see yourself in 5 years realistically?\\nMe: In jail for insubordination.\",\n    \"numberLikesOnPost\": 4,\n    \"postMediaURL\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\",\n    \"user\": {\n      \"userId\": 5\n    }\n  },\n  {\n    \"postTitle\": \"The Office Life\",\n    \"postContent\": \"Working in an office is like being in a bad relationship. You pretend everything's fine, but deep down, you know it's not working out.\",\n    \"numberLikesOnPost\": 9,\n    \"postMediaURL\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\",\n    \"user\": {\n      \"userId\": 6\n    }\n  },\n  {\n    \"postTitle\": \"Job Application Stress\",\n    \"postContent\": \"Filling out job applications is like answering exam questions you didn't study for. You just hope you get enough right to pass.\",\n    \"numberLikesOnPost\": 13,\n    \"postMediaURL\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\",\n    \"user\": {\n      \"userId\": 6\n    }\n  },\n  {\n    \"postTitle\": \"Dream Job vs. Reality\",\n    \"postContent\": \"Dream job: Getting paid to travel the world.\\nReality: Getting paid to sit in a cubicle and stare at a computer screen.\",\n    \"numberLikesOnPost\": 2,\n    \"postMediaURL\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\",\n    \"user\": {\n      \"userId\": 7\n    }\n  },\n  {\n    \"postTitle\": \"Job Interview Nerves\",\n    \"postContent\": \"Me: I'm excited to be here for the interview!\\nBrain: Say something stupid.\\nMe: I'm excited to be here for the inter...view.\",\n    \"numberLikesOnPost\": 16,\n    \"postMediaURL\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\",\n    \"user\": {\n      \"userId\": 7\n    }\n  },\n  {\n    \"postTitle\": \"Resume Building Pro Tip\",\n    \"postContent\": \"My resume says 'detail-oriented with excellent communication skills'. Translation: I can email memes to my coworkers.\",\n    \"numberLikesOnPost\": 6,\n    \"postMediaURL\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\",\n    \"user\": {\n      \"userId\": 8\n    }\n  },\n  {\n    \"postTitle\": \"Job Hunt Struggles\",\n    \"postContent\": \"The job hunt is like trying to find your keys in the dark. You know they're out there somewhere, but you keep stumbling over obstacles.\",\n    \"numberLikesOnPost\": 11,\n    \"postMediaURL\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\",\n    \"user\": {\n      \"userId\": 8\n    }\n  },\n  {\n    \"postTitle\": \"Job Interview Tips\",\n    \"postContent\": \"Interview tip: If they ask where you see yourself in 5 years, don't say 'working here'. They want ambition, not desperation.\",\n    \"numberLikesOnPost\": 1,\n    \"postMediaURL\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\",\n    \"user\": {\n      \"userId\": 9\n    }\n  },\n  {\n    \"postTitle\": \"The Office Drama\",\n    \"postContent\": \"Office politics is like a soap opera, but with fewer attractive people and more passive-aggressive emails.\",\n    \"numberLikesOnPost\": 14,\n    \"postMediaURL\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\",\n    \"user\": {\n      \"userId\": 9\n    }\n  },\n  {\n    \"postTitle\": \"The Job Search Saga\",\n    \"postContent\": \"The job search is a roller coaster of emotions. One minute you're hopeful, the next you're crying into a pint of ice cream.\",\n    \"numberLikesOnPost\": 0,\n    \"postMediaURL\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\",\n    \"user\": {\n      \"userId\": 10\n    }\n  },\n  {\n    \"postTitle\": \"Job Interview Nightmare\",\n    \"postContent\": \"Went to a job interview today. When they asked where I saw myself in 5 years, I said 'celebrating the 5th year anniversary of you asking me this question'.\",\n    \"numberLikesOnPost\": 17,\n    \"postMediaURL\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\",\n    \"user\": {\n      \"userId\": 10\n    }\n  }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/tags/bulk",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tags",
+								"bulk"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User Setup",
+			"item": [
+				{
+					"name": "Get Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/users/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get NonExistent User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/users/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"newuser\",\n  \"email\": \"newuser@example.com\",\n  \"password\": \"password123\",\n  \"profilePictureURL\": \"https://example.com/profile_pic.jpg\",\n  \"userBio\": \"A new user joining the community\",\n  \"address\": {\n      \"street\": \"1234 Nunya Business St\",\n      \"city\": \"City 11\",\n      \"state\": \"State 11\",\n      \"zipCode\": \"01234\",\n      \"country\": \"Country 11\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User and Forget Required Fields",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"DA BESTEST USER EVA\",\n  \"email\": \"\",\n  \"password\": \"password123\",\n  \"profilePictureURL\": \"https://example.com/profile_pic.jpg\",\n  \"userBio\": \"A new user joining the community\",\n  \"address\": {\n      \"street\": \"1234 Nunya Business St\",\n      \"city\": \"City 11\",\n      \"state\": \"State 11\",\n      \"zipCode\": \"01234\",\n      \"country\": \"Country 11\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/users/11",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User By Id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"DA BESTEST USER EVA\",\n  \"email\": \"newuser@example.com\",\n  \"password\": \"password123\",\n  \"profilePictureURL\": \"https://example.com/profile_pic.jpg\",\n  \"userBio\": \"A new user joining the community\",\n  \"address\": {\n      \"street\": \"1234 Nunya Business St\",\n      \"city\": \"City 11\",\n      \"state\": \"State 11\",\n      \"zipCode\": \"01234\",\n      \"country\": \"Country 11\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/users/11",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User By Id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"DA BESTEST USER EVA\",\n  \"email\": \"newuser@example.com\",\n  \"password\": \"password123\",\n  \"profilePictureURL\": \"https://example.com/profile_pic.jpg\",\n  \"userBio\": \"A new user joining the community\",\n  \"address\": {\n      \"street\": \"1234 Nunya Business St\",\n      \"city\": \"City 11\",\n      \"state\": \"State 11\",\n      \"zipCode\": \"01234\",\n      \"country\": \"Country 11\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/users/11",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create User with Missing Required Fields",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"\",\n  \"email\": \"newuser@example.com\",\n  \"password\": \"password123\",\n  \"profilePictureURL\": \"https://example.com/profile_pic.jpg\",\n  \"userBio\": \"A new user joining the community\",\n  \"address\": {\n      \"street\": \"1234 Nunya Business St\",\n      \"city\": \"City 11\",\n      \"state\": \"State 11\",\n      \"zipCode\": \"01234\",\n      \"country\": \"Country 11\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Address",
+			"item": [
+				{
+					"name": "Get Address of a User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/address/users/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"address",
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Address of  A User",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"street\": \"123 Updated Street\",\n  \"city\": \"Updated City\",\n  \"state\": \"Updated State\",\n  \"zipCode\": \"12345\",\n  \"country\": \"Updated Country\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/address/users/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"address",
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Post",
+			"item": [
+				{
+					"name": "Get Posts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/posts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Posts By Keywords",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/posts?keyword=job",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"posts"
+							],
+							"query": [
+								{
+									"key": "keyword",
+									"value": "job"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Post (made by User)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var template = `",
+									"<style type=\"text/css\">",
+									"    .tftable {font-size:14px;color:#333333;width:100%;border-width: 1px;border-color: #87ceeb;border-collapse: collapse;}",
+									"    .tftable th {font-size:18px;background-color:#87ceeb;border-width: 1px;padding: 8px;border-style: solid;border-color: #87ceeb;text-align:left;}",
+									"    .tftable tr {background-color:#ffffff;}",
+									"    .tftable td {font-size:14px;border-width: 1px;padding: 8px;border-style: solid;border-color: #87ceeb;}",
+									"    .tftable tr:hover {background-color:#e0ffff;}",
+									"</style>",
+									"",
+									"<table class=\"tftable\" border=\"1\">",
+									"    <tr>",
+									"        <th>Timestamp</th>",
+									"        <th>Status</th>",
+									"        <th>Error</th>",
+									"        <th>Path</th>",
+									"    </tr>",
+									"    <tr>",
+									"        <td>{{response.timestamp}}</td>",
+									"        <td>{{response.status}}</td>",
+									"        <td>{{response.error}}</td>",
+									"        <td>{{response.path}}</td>",
+									"    </tr>",
+									"</table>",
+									"`;",
+									"",
+									"function constructVisualizerPayload() {",
+									"    return { response: pm.response.json() }",
+									"}",
+									"",
+									"pm.visualizer.set(template, constructVisualizerPayload());"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"postTitle\": \"Job Referral Dos and Don'ts\",\n  \"postContent\": \"Giving a job referral is like being a matchmaker. You're trying to set up the perfect relationship between a friend and a company, but if it goes wrong, you're the one they blame.\",\n  \"numberLikesOnPost\": 0,\n  \"postMediaURL\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/posts/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"posts",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Post, forgot title",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"postTitle\": \"\",\n  \"postContent\": \"Giving a job referral is like playing Cupid for careers. You're trying to spark a love connection between your friend and a company, but if it fizzles out, you're left feeling like a matchmaker with two left feet.\",\n  \"numberLikesOnPost\": 0,\n  \"postMediaURL\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\"\n  \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/posts/21",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"posts",
+								"21"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Post By Id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"postTitle\": \"Job Referral Dos and Don'ts 😂\",\n  \"postContent\": \"Giving a job referral is like playing Cupid for careers. You're trying to spark a love connection between your friend and a company, but if it fizzles out, you're left feeling like a matchmaker with two left feet.\",\n  \"numberLikesOnPost\": 0,\n  \"postMediaURL\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\"\n  \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/posts/21",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"posts",
+								"21"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Post By Id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/posts/21",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"posts",
+								"21"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Post (w/ Blank Body)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var template = `",
+									"<style type=\"text/css\">",
+									"    .tftable {font-size:14px;color:#333333;width:100%;border-width: 1px;border-color: #87ceeb;border-collapse: collapse;}",
+									"    .tftable th {font-size:18px;background-color:#87ceeb;border-width: 1px;padding: 8px;border-style: solid;border-color: #87ceeb;text-align:left;}",
+									"    .tftable tr {background-color:#ffffff;}",
+									"    .tftable td {font-size:14px;border-width: 1px;padding: 8px;border-style: solid;border-color: #87ceeb;}",
+									"    .tftable tr:hover {background-color:#e0ffff;}",
+									"</style>",
+									"",
+									"<table class=\"tftable\" border=\"1\">",
+									"    <tr>",
+									"        <th>Timestamp</th>",
+									"        <th>Status</th>",
+									"        <th>Error</th>",
+									"        <th>Path</th>",
+									"    </tr>",
+									"    <tr>",
+									"        <td>{{response.timestamp}}</td>",
+									"        <td>{{response.status}}</td>",
+									"        <td>{{response.error}}</td>",
+									"        <td>{{response.path}}</td>",
+									"    </tr>",
+									"</table>",
+									"`;",
+									"",
+									"function constructVisualizerPayload() {",
+									"    return { response: pm.response.json() }",
+									"}",
+									"",
+									"pm.visualizer.set(template, constructVisualizerPayload());"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"postTitle\": \"Job Referral Dos and Don'ts\",\n  \"postContent\": \"\",\n  \"numberLikesOnPost\": 0,\n  \"postMediaURL\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/posts/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"posts",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tag",
+			"item": [
+				{
+					"name": "Get Tags",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/tags",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tags"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Tag With Missing Info",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"tagName\": \"Humor\",\n  \"tagDescription\": \"\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/tags",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tags"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Tag",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/tags",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tags"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Tag by Tag Id - missing info",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"tagName\": \"Top Notch Humor\",\n  \"tagDescription\": \"\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/tags/11",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tags",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Tag by Tag Id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"tagName\": \"Top Notch Humor\",\n  \"tagDescription\": \"Posts related to the bestest humor and jokes\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/tags/11",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tags",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Tag By Id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/tags/11",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tags",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Tag to Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/tags/1/posts/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tags",
+								"1",
+								"posts",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get posts associated with a tag",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/tags/1/posts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tags",
+								"1",
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Posts Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/posts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"posts"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Comment",
+			"item": [
+				{
+					"name": "Notification Test",
+					"item": [
+						{
+							"name": "Get Notification By User",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/users/1/notifications",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"users",
+										"1",
+										"notifications"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Add Comment To Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"commentText\": \"Oooh spicy one there!.\",\n  \"numberLikesOnComment\": 5,\n  \"commentedByUsername\": \"user2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/comments/posts/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"comments",
+								"posts",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Comments Tied to a Post",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"commentText\": \"Oooh spicy one there!.\",\n  \"numberLikesOnComment\": 5,\n  \"commentedByUsername\": \"user2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/comments/posts/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"comments",
+								"posts",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Comment to blank one",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"commentText\": \"\",\n  \"numberLikesOnComment\": 5,\n  \"commentedByUsername\": \"user2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/comments/1/posts/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"comments",
+								"1",
+								"posts",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Comment on a Post",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"commentText\": \"What a refreshing funny one!\",\n  \"numberLikesOnComment\": 5,\n  \"commentedByUsername\": \"user2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/comments/1/posts/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"comments",
+								"1",
+								"posts",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Posts Copy 2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/posts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Comment by Id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"commentText\": \"Oooh spicy one there!.\",\n  \"numberLikesOnComment\": 5,\n  \"commentedByUsername\": \"user2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/comments/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"comments",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Comment to Post Empty",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"commentText\": \"\",\n    \"numberLikesOnComment\": null,\n    \"commentedByUsername\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/comments/posts/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"comments",
+								"posts",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
