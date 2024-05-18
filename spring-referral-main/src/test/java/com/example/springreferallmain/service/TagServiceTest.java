@@ -100,20 +100,10 @@ public class TagServiceTest {
     @Test
     public void testAddTagToPostPass() {
         // Setup of mock method with "parameters"
-        // Note: I had to initialize an array list because otherwise it would not allow me to mock adding comments to an existing list.
-
         Integer postId = 1;
         Integer tagId= 1;
         when(mockPostRepository.findById(postId)).thenReturn(Optional.ofNullable(testPost));
         when(mockTagRepository.findById(tagId)).thenReturn(Optional.ofNullable(testTag));
-
-//        List<Tag> testTagsFromTestPost = new ArrayList<>(testPost.getTags());
-//        List<Tag> updatedTags = testPost.getTags();
-
-//        testTagsFromTestPost.add(testTag);
-//        testPost.setTags(testTagsFromTestPost);
-//         Had to do this because test data doesn't automatically maintain the bidirectional relationship between posts and tags.
-
 
         when(mockPostRepository.save(testPost)).thenReturn(testPost);
 
@@ -121,11 +111,11 @@ public class TagServiceTest {
         Tag result = beanTagService.addTagToPost(postId, tagId);
 
         // Verify results
-        assertNotNull(result);
+//        assertNotNull(result);
         assertEquals(testTag, result);
         List<Tag> updatedTags = testPost.getTags();
         assertTrue(updatedTags.contains(testTag));
-//        assertEquals(testTag.getPosts(), result.getPosts());
+
 
         verify(mockPostRepository, times(1)).findById(postId);
         verify(mockTagRepository, times(1)).findById(tagId);

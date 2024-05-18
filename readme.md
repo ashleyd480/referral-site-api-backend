@@ -288,6 +288,8 @@ With my current design, a user's posts need to be deleted first before a user ca
 
 Currently, I only have a method to simply delete a post. However, to make things easier, I could do add a delete posts by user method- first finding the user and his/her posts, and then deleting that. 
 
+Alternatively, here is another idea (revisitng after learning React and credit to an amazing current front-end SWE for sharing this advice). "Instead of deleting the user, we could set their state as deleted and still keep their posts.  When a person is deleted, their name is set to "Deleted user", but then the rest of the database will still work."
+
 
 ## Testing Best Practices
 Two things I would have done differently in my testing:
