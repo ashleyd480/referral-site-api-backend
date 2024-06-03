@@ -288,7 +288,9 @@ With my current design, a user's posts need to be deleted first before a user ca
 
 Currently, I only have a method to simply delete a post. However, to make things easier, I could do add a delete posts by user method- first finding the user and his/her posts, and then deleting that. 
 
-Alternatively, here is another idea (revisitng after learning React) and credit to an amazing current front-end SWE for sharing this advice: "Instead of deleting the user, we could set their state as deleted and still keep their posts.  When a person is deleted, their name is set to "Deleted user", but then the rest of the database will still work."
+Alternatively, here is another idea (revisitng after learning React) and credit to an amazing current front-end SWE for sharing this advice: "Instead of deleting the user, we could set their state as deleted and still keep their posts.  When a person is deleted, their name is set to "Deleted user", but then the rest of the database will still work." 
+
+A third idea would be adding the `CascadeType.All` to to `posts` under Users, which would resolve the foreign key constraint issue of being unable to delete users due to users being tied to posts. `CascadeType.All` would essentially just delete the associated posts when a user is deleted. 
 
 
 ## Testing Best Practices
